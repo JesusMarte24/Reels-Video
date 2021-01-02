@@ -43,7 +43,7 @@ header {
 #header__sidebar {
     height: 100%; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    /* position: fixed; Stay in place */
     z-index: 1; /* Stay on top */
     /* top: 0; Stay at the top */
     /* left: 0; */
@@ -114,13 +114,17 @@ header {
 }
 
 #sing__up--button{
-    background-color: #8cccfc;
+    background-color: #d498e8;
     color: #FFFFFF;
 }
 
 .sidebar__menu {
-    box-shadow: 0 0 2px inset white;
-    margin: 2rem;
+    /* box-shadow: 0 0 2px inset white; */
+    margin: 3rem;
+}
+
+.sidebar__menu ul {
+    list-style: none;
 }
 
 .nav__menu--anchor{
@@ -128,3 +132,84 @@ header {
     font-size: 1.6rem;
     text-decoration: none;
 }
+
+#home--anchor {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    border: 0;
+    height: .1px;
+    background: #ccc;
+}
+
+#film--anchor {
+    display: inline-block;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+#film--anchor::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: transparent url("../../images/down__arrow.svg") no-repeat;
+    background-size: contain;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: .5rem;
+    right: -2rem;
+}
+
+.film__nav {
+    padding: 1.5rem;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    color: #ccc;
+    columns: 2;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0;
+}
+
+.film__nav li{
+    padding: .5rem;
+}
+
+#movies--anchor {
+    display: inline-block;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+#movies--anchor::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: transparent url("../../images/down__arrow.svg") no-repeat;
+    background-size: contain;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: .5rem;
+    right: -2rem;
+}
+
+.movies__nav {
+    padding: 1.5rem;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    color: #ccc;
+    columns: 2;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0;
+}
+
+.movies__nav li {
+    padding: .5rem;
+}
+
+#show--anchor {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
