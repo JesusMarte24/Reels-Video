@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: relative;
 }
 
 .header__container--1 img {
@@ -28,7 +29,7 @@ header {
     border-radius: 50%;
 }
 
-.header__container--1 span {
+.sidebar__button {
     content: '';
     display: inline-block;
     background: transparent url("../../images/menu__icon.svg") no-repeat;
@@ -37,20 +38,37 @@ header {
     width: 5rem;
     margin-right: 2rem;
     margin-top: 1rem;
+    transition: .5s;
 }
 
+.sidebar__button--close {
+    background: transparent url("../../images/menu__icon--close.svg") no-repeat;
+    background-size: contain;
+    transition: .5s;
+}
 
-#header__sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 100%; /* 0 width - change this with JavaScript */
-    /* position: fixed; Stay in place */
-    z-index: 1; /* Stay on top */
-    /* top: 0; Stay at the top */
-    /* left: 0; */
-    background-color: rgb(27, 28, 36); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
+.hide__sidebar{
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    background-color: rgb(27, 28, 36);
+    overflow-x: hidden;
     padding-top: 2rem;
-    transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: .5s;
+}
+
+.header__container--2 {
+    height: 100%;
+    width: 100%; 
+    z-index: 1; 
+    position: relative;
+    left: 0;
+    background-color: rgb(27, 28, 36);
+    overflow-x: hidden;
+    padding-top: 2rem;
+    transition: .5s;
 }
 
 .sidebar__input--container {

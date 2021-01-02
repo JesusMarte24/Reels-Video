@@ -1,8 +1,9 @@
-function openNav() {
-  document.getElementById("header__sidebar").style.width = "250px";
-}
+let htmlElements = {
+  header__sidebar: document.getElementById("header__sidebar"),
+  sidebar__button: document.querySelector(".sidebar__button"),
+};
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+htmlElements.sidebar__button.addEventListener("click", () => {
+  htmlElements.header__sidebar.classList.toggle("header__container--2");
+  htmlElements.sidebar__button.classList.toggle("sidebar__button--close");
+});
