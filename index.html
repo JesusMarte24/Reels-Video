@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reels | A Movie Garden</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/icon.png" sizes="64x64">
     <link rel="stylesheet" href="./css/index/main.css">
     <link rel="stylesheet" href="./css/index/tablet.css" media="screen and (min-width: 768px)">
@@ -17,11 +19,10 @@
             <picture>
                 <img src="./images/logo__mobile1.png" alt="Logo of the company">
             </picture>
-            <span onclick="openNav()" style="color: #ffffff;">	&#9776;</span>
+                <span onclick="openNav()"></span>
         </div>
         
         <div class="header__container--2" id="header__sidebar">
-
             <div class="sidebar__input--container">
                 <input type="text" placeholder="Type something...">
                 <div>
@@ -29,15 +30,52 @@
                     <button id="sing__up--button">Sing Up</button>
                 </div>
             </div>
-            <nav>
+
+            <nav class="sidebar__menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Film Genres</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Shows</a></li>
+                    <li>
+                        <a class="nav__menu--anchor" id="home--anchor" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__menu--anchor" id="film--anchor" href="#">Film Genres</a>
+                        <nav>
+                            <ul>
+                                <li>Action</li>
+                                <li>Adventure</li>
+                                <li>Biography</li>
+                                <li>Comedy</li>
+                                <li>Documentaries</li>
+                                <li>Family</li>
+                                <li>Mistery</li>
+                                <li>Romance</li>
+                                <li>Thriller</li>
+                                <li>Animation</li>
+                                <li>War</li>
+                                <li>Sci-Fi</li>
+                                <li>Crime</li>
+                                <li>Drama</li>
+                                <li>Fantasy</li>
+                                <li>Musical</li>
+                                <li>Terror</li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a class="nav__menu--anchor" id="movies--anchor"href="#">Movies</a>
+                        <nav>
+                            <ul>
+                                <li>Premieres</li>
+                                <li>Most Viewed</li>
+                                <li>Rankings</li>
+                                <li>Movies</li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a class="nav__menu--anchor" id="show--anchor" href="#">Shows</a>
+                     </li>
                 </ul> 
             </nav>
-
         </div>
     
     </header>
