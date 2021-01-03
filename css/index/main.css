@@ -42,9 +42,15 @@ header {
 }
 
 .sidebar__button--close {
+    content: '';
     background: transparent url("../../images/menu__icon--close.svg") no-repeat;
     background-size: contain;
     transition: .5s;
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
 }
 
 .hide__sidebar{
