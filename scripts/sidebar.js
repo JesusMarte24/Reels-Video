@@ -5,6 +5,12 @@ let htmlElements = {
 
 htmlElements.sidebar__button.addEventListener("click", () => {
   htmlElements.header__sidebar.classList.toggle("header__container--2");
-  htmlElements.sidebar__button.classList.toggle("sidebar__button--close");
-  htmlElements.sidebar__button.classList.toggle("sidebar__button");
+
+  if (htmlElements.sidebar__button.classList.contains("sidebar__button")) {
+    htmlElements.sidebar__button.classList.add("sidebar__button--close");
+    htmlElements.sidebar__button.classList.remove("sidebar__button");
+  } else {
+    htmlElements.sidebar__button.classList.remove("sidebar__button--close");
+    htmlElements.sidebar__button.classList.add("sidebar__button");
+  }
 });
