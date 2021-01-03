@@ -38,21 +38,19 @@ header {
     width: 5rem;
     margin-right: 2rem;
     margin-top: 1rem;
-    transition: .5s;
+    transition: 1.5s;
 }
 
 .sidebar__button--close {
     content: '';
     background: transparent url("../../images/menu__icon--close.svg") no-repeat;
     background-size: contain;
-    transition: .5s;
-    display: inline-block;
+    transition: 1.5s;
+    display: none;
     height: 5rem;
     width: 5rem;
     margin-right: 2rem;
     margin-top: 1rem;
-    position: relative;
-    z-index: 10;
 }
 
 .hide__sidebar{
