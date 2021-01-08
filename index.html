@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./css/index/tablet.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="./css/index/desktop.css" media="screen and (min-width: 1024px)">
 </head>
-<body>
+
+<body id="body">
 
     <header id="header">
 
@@ -20,70 +21,76 @@
                 <img src="./images/logo__white.png" alt="Logo of the company">
             </picture>
                 <span class="sidebar__button" id="sidebar__button"></span>
-                <span class="sidebar__button--close" id="sidebar__button--close"></span>
-        </div>
-        
-        <div class="hide__sidebar" id="header__sidebar">
-            <div class="sidebar__input--container">
-                <input type="text" placeholder="Type something...">
-                <div>
-                    <button id="login__button">Login</button>
-                    <button id="sing__up--button">Sign Up</button>
-                </div>
-            </div>
-
-            <nav class="sidebar__menu">
-                <ul>
-                    <li>
-                        <a class="nav__menu--anchor" id="home--anchor" href="#">Home</a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a class="nav__menu--anchor" id="film--anchor" href="#">Film Genres</a>
-                        <nav class="film__nav">
-                            <ul>
-                                <li><a href="#" >Action</a></li>
-                                <li><a href="#" >Adventure</a></li>
-                                <li><a href="#" >Biography</a></li>
-                                <li><a href="#" >Comedy</a></li>
-                                <li><a href="#" >Documentaries</a></li>
-                                <li><a href="#" >Family</a></li>
-                                <li><a href="#" >Mistery</a></li>
-                                <li><a href="#" >Romance</a></li>
-                                <li><a href="#" >Thriller</a></li>
-                                <li><a href="#" >Animation</a></li>
-                                <li><a href="#" >War</a></li>
-                                <li><a href="#" >Sci-Fi</a></li>
-                                <li><a href="#" >Crime</a></li>
-                                <li><a href="#" >Drama</a></li>
-                                <li><a href="#" >Fantasy</a></li>
-                                <li><a href="#" >Musical</a></li>
-                                <li><a href="#" >Terror</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <hr>
-                    <li>
-                        <a class="nav__menu--anchor" id="movies--anchor"href="#">Movies</a>
-                        <nav class="movies__nav">
-                            <ul>
-                                <li><a href="#" >Premieres</a></li>
-                                <li><a href="#" >Most Viewed</a></li>
-                                <li><a href="#" >Rankings</a></li>
-                                <li><a href="#" >Movies</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <hr>
-                    <li>
-                        <a class="nav__menu--anchor" id="show--anchor" href="#">Shows</a>
-                    </li>
-                </ul> 
-            </nav>
         </div>
     
     </header>
-    
+
+    <div class="hide__sidebar" id="header__sidebar">
+
+        <div class="sidebar__logo--container">
+            <picture>
+                <img src="./images/logo__white.png" alt="Logo of the company">
+            </picture>
+                <span class="sidebar__button--close" id="sidebar__button--close"></span>
+        </div>
+
+        <div class="sidebar__input--container">
+            <input type="text" placeholder="Type something...">
+            <div>
+                <button id="login__button">Login</button>
+                <button id="sing__up--button">Sign Up</button>
+            </div>
+        </div>
+
+        <nav class="sidebar__menu">
+            <ul>
+                <li>
+                    <a class="nav__menu--anchor" id="home--anchor" href="#">Home</a>
+                </li>
+                <hr>
+                <li>
+                    <a class="nav__menu--anchor" id="film--anchor" href="#">Film Genres</a>
+                    <nav class="film__nav">
+                        <ul>
+                            <li><a href="#" >Action</a></li>
+                            <li><a href="#" >Adventure</a></li>
+                            <li><a href="#" >Biography</a></li>
+                            <li><a href="#" >Comedy</a></li>
+                            <li><a href="#" >Documentaries</a></li>
+                            <li><a href="#" >Family</a></li>
+                            <li><a href="#" >Mistery</a></li>
+                            <li><a href="#" >Romance</a></li>
+                            <li><a href="#" >Thriller</a></li>
+                            <li><a href="#" >Animation</a></li>
+                            <li><a href="#" >War</a></li>
+                            <li><a href="#" >Sci-Fi</a></li>
+                            <li><a href="#" >Crime</a></li>
+                            <li><a href="#" >Drama</a></li>
+                            <li><a href="#" >Fantasy</a></li>
+                            <li><a href="#" >Musical</a></li>
+                            <li><a href="#" >Terror</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <hr>
+                <li>
+                    <a class="nav__menu--anchor" id="movies--anchor"href="#">Movies</a>
+                    <nav class="movies__nav">
+                        <ul>
+                            <li><a href="#" >Premieres</a></li>
+                            <li><a href="#" >Most Viewed</a></li>
+                            <li><a href="#" >Rankings</a></li>
+                            <li><a href="#" >Movies</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <hr>
+                <li>
+                    <a class="nav__menu--anchor" id="show--anchor" href="#">Shows</a>
+                </li>
+            </ul> 
+        </nav>
+    </div>
     
         <main class="main">
             <div class="main__container">
