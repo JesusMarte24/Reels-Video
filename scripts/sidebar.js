@@ -23,7 +23,7 @@ htmlElements.sidebar__buttonClose.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 30) {
     htmlElements.header.style.backgroundColor = "rgb(27, 28, 36)";
   } else {
     htmlElements.header.style.backgroundColor = "transparent";

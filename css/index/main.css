@@ -9,8 +9,12 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
     background-color:  rgb(27, 28, 36);
-    transition: all .4s;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 a {
@@ -20,7 +24,10 @@ a {
 
 header {
     background-color: transparent; 
-    transition: all .4s;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
     position: fixed;
     width: 100%;
     top: 0;
@@ -66,7 +73,10 @@ header {
     top: 0;
     background-color: rgb(27, 28, 36);
     overflow-x: hidden;
-    transition: all .4s;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 .sidebar__logo--container {
@@ -363,7 +373,7 @@ hr {
 }
 
 .movies__menu--container{
-    /* box-shadow: 0 0 5px inset white; */
+    width: 100vw;
     margin-top: 2rem;
 }
 
@@ -371,7 +381,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: 0px 0px 3px 1px #FFFFFF
+    box-shadow: 0px -1px 1px 1px #FFFFFF;
 }
 
 .movies__menu--tittles h2 {
@@ -395,11 +405,45 @@ hr {
 }
 
 .movies__menu--allmovies {
-    columns: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.movies__menu--column1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.movies__menu--column2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.movies__menu--allmovies figure {
+    width: 15.5rem;
+    height: 25.5rem;
+    margin: 2rem auto;
+}
+
+.movies__menu--allmovies figure img {
+    width: 15.5rem;
+    height: 22rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: .5rem;
 }
 
 .movies__menu--allmovies figcaption{
-    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: .8rem;
+    color: #EEEEEE;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
