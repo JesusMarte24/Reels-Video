@@ -14,7 +14,6 @@ html, body {
     -moz-transition: all .5s;
     -o-transition: all .5s;
     overflow-x: hidden;
-    width: 100vw;
 }
 
 a {
@@ -73,6 +72,7 @@ header {
     top: 0;
     background-color: rgb(27, 28, 36);
     overflow-x: hidden;
+    overflow-y: auto;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
