@@ -23,7 +23,7 @@ header {
     transition: .3s;
     position: relative;
     z-index: 10;
-    height: 10rem;
+    height: 12rem;
 }
 
 .header__container--1 {
@@ -32,6 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 100%;
     height: 10rem;
     padding-top: 2rem;
 }
@@ -40,6 +41,7 @@ header {
     width: 60%;
     height: auto;
     margin-left: 2rem;
+    flex: 1 1 30.2rem;
 }
 
 .sidebar__button {
@@ -49,8 +51,8 @@ header {
     background-size: contain;
     height: 5rem;
     width: 5rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
+    flex: 0 0 5rem;
+    margin-right: 2.5rem;
 }
 
 .sidebar__button--close {
@@ -60,20 +62,19 @@ header {
     display: none;
     height: 5rem;
     width: 5rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
+    flex: 0 0 5rem;
+    margin-right: 2.5rem;
 }
 
 .hide__sidebar{
     width: 0;
-    height: 100%;
+    height: 100vh;
     z-index: 30;
     position: absolute;
     left: 0;
-    top: -0.1rem;
     background-color: rgb(27, 28, 36);
     overflow-x: hidden;
-    padding-top: 2rem;
+    padding-top: 4rem;
     transition: .2s;
 }
 
@@ -81,12 +82,12 @@ header {
     height: 100vh;
     width: 100%; 
     z-index: 30; 
-    position: relative;
+    position: absolute;
     left: 0;
     background-color: rgb(27, 28, 36);
     overflow-x: hidden;
     padding-top: 4rem;
-    transition: .3s;
+    transition: .2s;
 
 }
 
@@ -256,9 +257,10 @@ hr {
     z-index: -1;
     width: 100%;
     height: 100vh;
+    max-height: 70.4rem;
     /* fallback */
     background-image: url("../../images/spongebob__tiny.jpg"); 
-    background-image: linear-gradient(to bottom, rgba(27, 28, 36, 0.8) 5%, rgba(27, 28, 36, .5) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .5) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/spongebob__tiny.jpg);
+    background-image: linear-gradient(to bottom, rgba(27, 28, 36, 0.8) 5%, rgba(27, 28, 36, .7) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/spongebob__tiny.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,10 +270,10 @@ hr {
     display: flex;
     flex-wrap: wrap;
     width: calc(85%);
-    margin-top: 15rem;
+    margin-top: 17rem;
     margin-left: 2rem;
     max-width: calc(85%);
-    max-height: 30.5rem;
+    height: auto;
     align-items: flex-start;
 }
 
@@ -279,6 +281,7 @@ hr {
     font-size: 3rem;
     font-weight: 800;
     color: white;
+    flex-shrink: 1;
 }
 
 #content--type {
@@ -287,6 +290,7 @@ hr {
     border-radius: 1rem;
     font-size: 1.4rem;
     padding: .3rem;
+    flex-shrink: 1;
 }
 
 .main__container span {
@@ -294,12 +298,14 @@ hr {
     font-weight: 600;
     color: #d8b207;
     margin-top: 1.2rem;
+    flex-shrink: 1;
 }
 
 .main__container span small {
     color: #EEE;
     font-size: 1.5rem;
     margin-left: 1.6rem;
+    flex-shrink: 1;
 }
 
 .main__container p {
@@ -312,6 +318,7 @@ hr {
     overflow: scroll;
     white-space: normal;
     text-overflow: ellipsis;
+    flex-shrink: 2;
 }
 
 .main__container button {
@@ -330,6 +337,7 @@ hr {
     position: relative;
     padding-left: 2rem;
     transition: .2s;
+    flex-shrink: 2;
 }
 
 .main__container button::after {
