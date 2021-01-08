@@ -7,14 +7,14 @@ let htmlElements = {
 
 htmlElements.sidebar__button.addEventListener("click", () => {
   htmlElements.header.style.backgroundColor = "rgb(27, 28, 36)";
-  htmlElements.header__sidebar.classList.toggle("header__container--2");
+  htmlElements.header__sidebar.style.width = "100%";
   htmlElements.sidebar__buttonClose.style.display = "inline-block";
   htmlElements.sidebar__button.style.display = "none";
 });
 
 htmlElements.sidebar__buttonClose.addEventListener("click", () => {
   htmlElements.header.style.backgroundColor = "transparent";
-  htmlElements.header__sidebar.classList.toggle("header__container--2");
+  htmlElements.header__sidebar.style.width = "0%";
   htmlElements.sidebar__button.style.display = "inline-block";
   htmlElements.sidebar__buttonClose.style.display = "none";
 });
