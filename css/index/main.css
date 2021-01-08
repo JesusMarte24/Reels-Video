@@ -9,11 +9,17 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
     background-color:  rgb(27, 28, 36);
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
     overflow-x: hidden;
+}
+
+.body--lock{
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
 }
 
 a {
@@ -23,10 +29,10 @@ a {
 
 header {
     background-color: transparent; 
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
     position: fixed;
     width: 100%;
     top: 0;
@@ -65,18 +71,19 @@ header {
 .hide__sidebar{
     width: 0;
     height: 100%;
-    z-index: 30;
     position: fixed;
     z-index: 31;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgb(27, 28, 36);
     overflow-x: hidden;
     overflow-y: auto;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
 }
 
 .sidebar__logo--container {
