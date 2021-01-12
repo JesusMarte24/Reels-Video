@@ -432,7 +432,10 @@ hr {
     width: 15.5rem;
     height: 25.5rem;
     margin: 2rem auto;
+    box-shadow: 0 0 2px inset white;
+    position: relative;
 }
+
 
 .movies__menu--allmovies figure img {
     width: 15.5rem;
@@ -451,6 +454,18 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.movies__menu--allmovies figure span{
+    position: absolute;
+    bottom: 4.5rem;
+    left: 11.5rem;
+    color: black;
+    background-color:  #ffd40d;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .4rem .7rem .4rem .7rem;
 }
 
 
