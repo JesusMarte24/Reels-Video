@@ -432,7 +432,6 @@ hr {
     width: 15.5rem;
     height: 25.5rem;
     margin: 2rem auto;
-    box-shadow: 0 0 2px inset white;
     position: relative;
 }
 
@@ -466,6 +465,18 @@ hr {
     font-size: 1rem;
     font-weight: 600;
     padding: .4rem .7rem .4rem .7rem;
+}
+
+.movies__menu--allmovies figure a {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 15.5rem;
+    height: 25.5rem;
+}
+
+.movies__menu--allmovies figure a:hover {
+    cursor: pointer;
 }
 
 
