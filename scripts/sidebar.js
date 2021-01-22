@@ -40,18 +40,20 @@ function changedBackground() {
       htmlElements.mainSection.style.backgroundImage =
         "linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/mainImg/img" +
         i +
-        ".jpg)";
+        ".jpg)" +
+        "/";
       i++;
       console.log(`I es igual a ${i}`);
     } else {
       htmlElements.mainSection.style.backgroundImage =
         "linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/mainImg/img" +
         i +
-        ".jpg)";
+        ".jpg)" +
+        "/";
       i = 0;
       console.log(`I es igual a ${i}`);
     }
-  }, 8000);
+  }, 6000);
 }
 
 changedBackground();

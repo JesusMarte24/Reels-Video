@@ -278,7 +278,7 @@ hr {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: move-bg 8s linear infinite;
+    animation: move-bg 6s linear infinite;
 }
 
 @keyframes move-bg {
@@ -289,7 +289,7 @@ hr {
         transform: translateX(-187%);
     }
     5% {
-        transform: translateY(187%);
+        transform: translateY(-187%);
     }
     10% {
         transform: translateX(287%);
