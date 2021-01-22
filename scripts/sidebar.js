@@ -1,5 +1,6 @@
 let htmlElements = {
   header: document.getElementById("header"),
+  mainSection: document.getElementById("main"),
   body: document.getElementById("body"),
   header__sidebar: document.getElementById("header__sidebar"),
   sidebar__button: document.getElementById("sidebar__button"),
@@ -31,3 +32,26 @@ window.addEventListener("scroll", () => {
     htmlElements.header.style.backgroundColor = "transparent";
   }
 });
+
+function changedBackground() {
+  let i = 0;
+  setInterval(() => {
+    if (i < 9) {
+      htmlElements.mainSection.style.backgroundImage =
+        "linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/mainImg/img" +
+        i +
+        ".jpg)";
+      i++;
+      console.log(`I es igual a ${i}`);
+    } else {
+      htmlElements.mainSection.style.backgroundImage =
+        "linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/mainImg/img" +
+        i +
+        ".jpg)";
+      i = 0;
+      console.log(`I es igual a ${i}`);
+    }
+  }, 8000);
+}
+
+changedBackground();

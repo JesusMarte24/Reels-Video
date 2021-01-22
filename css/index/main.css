@@ -9,10 +9,6 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
     background-color:  rgb(27, 28, 36);
-    transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
     overflow-x: hidden;
 }
 
@@ -29,10 +25,6 @@ a {
 
 header {
     background-color: transparent; 
-    transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
     position: fixed;
     width: 100%;
     top: 0;
@@ -281,12 +273,35 @@ hr {
     max-height: 70.4rem;
     padding-top: 1rem;
     /* fallback */
-    background-image: url("../../images/spongebob__tiny.jpg"); 
-    background-image: linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/spongebob__tiny.jpg);
+    /* background-image: url("../../images/spongebob__tiny.jpg"); */
+    background-image: linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/movies__posters/avengers__end.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: move-bg 8s linear infinite;
 }
+
+@keyframes move-bg {
+    0% {
+      transform: translateX(0%);
+    }
+    2% {
+        transform: translateX(-187%);
+    }
+    5% {
+        transform: translateY(187%);
+    }
+    10% {
+        transform: translateX(287%);
+    }
+    25%{
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+ }
 
 .main__container {
     display: flex;
