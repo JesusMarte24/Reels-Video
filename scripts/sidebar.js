@@ -27,31 +27,8 @@ htmlElements.sidebar__buttonClose.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 30) {
-    htmlElements.header.style.backgroundColor = "rgb(27, 28, 36)";
+    htmlElements.header.style.backgroundColor = "rgba(27, 28, 36)";
   } else {
     htmlElements.header.style.backgroundColor = "transparent";
   }
 });
-
-function changedBackground() {
-  let i = 0;
-  setInterval(() => {
-    if (i < 9) {
-      htmlElements.mainSection.style.backgroundImage =
-        "linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/main__img/img" +
-        i +
-        ".jpg)";
-      i++;
-      console.log(`I es igual a ${i}`);
-    } else {
-      htmlElements.mainSection.style.backgroundImage =
-        "linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/main__img/img" +
-        i +
-        ".jpg)";
-      i = 0;
-      console.log(`I es igual a ${i}`);
-    }
-  }, 6000);
-}
-
-changedBackground();

@@ -24,12 +24,12 @@ a {
 }
 
 header {
-    background-color: transparent; 
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
     height: 12rem;
+    transition: .5s;
 }
 
 .header__container--1 {
@@ -268,17 +268,27 @@ hr {
 }
 
 .main {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     max-height: 70.4rem;
     padding-top: 1rem;
-    /* fallback */
-    /* background-image: url("../../images/spongebob__tiny.jpg"); */
-    background-image: linear-gradient(to bottom, rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, .8) 15%, rgba(27,28,36, .3), rgba(27, 28, 36, .7) 85%,rgba(27, 28, 36, 8) 100%), url(../../images/movies__posters/avengers__end.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: move-bg 6s linear infinite;
+    -webkit-box-shadow: inset 0px 50px 50px -10px #1B1C24; 
+    box-shadow: inset 0px 50px 50px -10px #1B1C24;
+    /* animation: move-bg 6s linear infinite; */
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    max-height: 70.4rem;
+    object-fit: cover;
+    object-position: center top;
+    margin-top: -1rem;
+    z-index: 1;
+    opacity: 0.5;
 }
 
 @keyframes move-bg {
@@ -304,6 +314,8 @@ hr {
  }
 
 .main__container {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     width: calc(85%);
