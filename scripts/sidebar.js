@@ -58,4 +58,4 @@ function newMovie() {
   }, 8000);
 }
 
-newMovie();
+// newMovie();
