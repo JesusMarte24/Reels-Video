@@ -1,6 +1,11 @@
+import myMovies from "./movies.js";
+
 let htmlElements = {
   header: document.getElementById("header"),
   mainSection: document.getElementById("main"),
+  mainBackground: document.getElementById("main__background"),
+  mainTittle: document.getElementById("main__tittle"),
+  mainParagraph: document.getElementById("main__paragraph"),
   body: document.getElementById("body"),
   header__sidebar: document.getElementById("header__sidebar"),
   sidebar__button: document.getElementById("sidebar__button"),
@@ -32,3 +37,25 @@ window.addEventListener("scroll", () => {
     htmlElements.header.style.backgroundColor = "transparent";
   }
 });
+
+function newMovie() {
+  let i = 1;
+
+  setInterval(() => {
+    if (i < myMovies.length - 1) {
+      htmlElements.mainBackground.src = `./images/main__img/img${i}.jpg`;
+      htmlElements.mainTittle.innerHTML = myMovies[i].name;
+      htmlElements.mainParagraph.innerHTML = myMovies[i].description;
+      i++;
+      console.log(i);
+    } else {
+      htmlElements.mainBackground.src = `./images/main__img/img${i}.jpg`;
+      htmlElements.mainTittle.innerHTML = myMovies[i].name;
+      htmlElements.mainParagraph.innerHTML = myMovies[i].description;
+      i = 0;
+      console.log(i);
+    }
+  }, 8000);
+}
+
+newMovie();

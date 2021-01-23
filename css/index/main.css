@@ -276,7 +276,7 @@ hr {
     padding-top: 1rem;
     -webkit-box-shadow: inset 0px 50px 50px -10px #1B1C24; 
     box-shadow: inset 0px 50px 50px -10px #1B1C24;
-    /* animation: move-bg 6s linear infinite; */
+    animation: move-bg 8s linear infinite;
 }
 
 .main img {
@@ -331,6 +331,7 @@ hr {
     font-weight: 800;
     color: white;
     flex: 1 1 auto;
+    text-transform: capitalize;
 }
 
 #content--type {
@@ -408,7 +409,6 @@ hr {
 
 .movies__menu--container{
     width: 100vw;
-    margin-top: 2rem;
 }
 
 .movies__menu--tittles {
