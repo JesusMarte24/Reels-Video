@@ -1,4 +1,8 @@
-.main__container h1 {
-    max-height: 8rem;
-   
+.swiper-slide p {
+    width: 35rem;
+    max-width: 35rem;
+}
+
+.swiper-slide button {
+    margin: 2.5rem auto 13rem 2rem;
 }
