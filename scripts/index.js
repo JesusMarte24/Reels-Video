@@ -1,7 +1,7 @@
 import Scroll from "./scroll.js";
 import Sidebar from "./sidebar.js";
-
-import { htmlElements } from "./htmlElements.js";
+import { Popular } from "./movies.js";
 
 Sidebar();
 Scroll();
+Popular();
