@@ -34,4 +34,6 @@ async function Popular() {
     });
 }
 
+async function AllMovies() {}
+
 export { Popular };

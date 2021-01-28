@@ -10,6 +10,12 @@ let htmlElements = {
   slides__rating: document.getElementsByClassName("slide--rating"),
   slides__release: document.getElementsByClassName("slide--release"),
   slides__overview: document.getElementsByClassName("slide--overview"),
+  pagination: document.getElementById("pagination"),
+  pagination__1: document.getElementById("pagination--1"),
+  pagination__2: document.getElementById("pagination--2"),
+  pagination__3: document.getElementById("pagination--3"),
+  pagination__4: document.getElementById("pagination--4"),
+  pagination__5: document.getElementById("pagination--5"),
 };
 
 export { htmlElements };

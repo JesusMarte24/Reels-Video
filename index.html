@@ -199,7 +199,7 @@
           </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div id="swiper-pagination" class="swiper-pagination"></div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -208,12 +208,11 @@
 
         <section class="movies__menu--container">
             <div class="movies__menu--tittles">
-                <h2>Movies |</h2>
+                <h2 id="all--movies">Movies |</h2>
                 <span>All Movies</span>
             </div>
             
             <div class="movies__menu--allmovies">
-                
                 <div class="movies__menu--column1">
                     <figure>
                         <picture>
@@ -459,6 +458,13 @@
                         <a href="#"></a>
                     </figure>
                 </div>
+            </div>
+            <div class="all__movies--pagination" id="pagination">
+                <a href="#swiper-pagination" id="pagination--1"></a>
+                <span id="pagination--2">1</span>
+                <span id="pagination--3">From</span>
+                <span id="pagination--4">99</span>
+                <a href="#swiper-pagination" id="pagination--5"></a>
             </div>
         </section>
         <script src="./scripts/swiper.js"></script>

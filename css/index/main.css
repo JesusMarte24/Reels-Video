@@ -1,8 +1,13 @@
+.swiper-container {
+    height: 65rem;
+  }
+
+
 .swiper-slide p {
     width: 35rem;
     max-width: 35rem;
 }
 
 .swiper-slide button {
-    margin: 2.5rem auto 13rem 2rem;
+    margin: 2.5rem auto 5rem 2rem;
 }
