@@ -23,7 +23,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 10;
-    height: 12rem;
+    height: 10rem;
     transition: .5s;
     background-image: linear-gradient(rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, 8) 10%, rgba(27, 28, 36, .8) 30%, rgba(27, 28, 36, .7) 50%, rgba(27, 28, 36, .6) 70%, rgba(27,28,36, .5) 80%, transparent 100%);
 }
@@ -35,7 +35,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 12rem;
+    height: 10rem;
 }
 
 @keyframes shake {
@@ -100,7 +100,7 @@ header {
     align-items: center;
     position: static;
     width: 100%;
-    height: 12rem;
+    height: 10rem;
 }
 
 .sidebar__logo--container img {
@@ -522,13 +522,11 @@ hr {
     margin: 2rem auto 3rem auto;
     align-items: center;
     justify-content: center;
-    border-left: .5px solid #d498e8;
-    border-right: .5px solid #8dcaff;
-    box-shadow: 0px .5px 0px 0px #d498e8, 0px -.5px 0px 0px #8dcaff;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
     width: 26rem;
-    border-radius: 1.1rem;
-    padding-top: .8rem;
-    padding-bottom: .8rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
 }
 
 
@@ -556,8 +554,8 @@ hr {
 
 
 #pagination--2{
-    background-color: #d498e8;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
     border-radius: 2rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -569,8 +567,8 @@ hr {
 }
 
 #pagination--4{
-    background-color: #8dcaff;
-    color:#FFFFFF;
+    background-color: #ffd40d;
+    color: black;
     border-radius: 2rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -580,7 +578,7 @@ hr {
 #pagination--5{
     content: '';
     display: inline-block;
-    background: transparent url("../../images/next.svg") no-repeat;
+    background: transparent url("../../images/back.svg") no-repeat;
     background-size: contain;
     height: 3rem;
     width: 3rem;
