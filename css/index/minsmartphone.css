@@ -25,7 +25,7 @@ header {
     z-index: 10;
     height: 12rem;
     transition: .5s;
-    background-image: linear-gradient(rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, 1) 10%, rgba(27, 28, 36, .8) 30%, rgba(27, 28, 36, .8) 50%, rgba(27, 28, 36, .5) 70%, transparent 100%);
+    background-image: linear-gradient(rgba(27, 28, 36, 1) 0%, rgba(27, 28, 36, 8) 10%, rgba(27, 28, 36, .8) 30%, rgba(27, 28, 36, .7) 50%, rgba(27, 28, 36, .6) 70%, rgba(27,28,36, .5) 80%, transparent 100%);
 }
 
 .header__container--1 {
