@@ -16,6 +16,9 @@ let htmlElements = {
   pagination__3: document.getElementById("pagination--3"),
   pagination__4: document.getElementById("pagination--4"),
   pagination__5: document.getElementById("pagination--5"),
+  movies__poster: document.getElementsByClassName("all--movies--poster"),
+  movies__title: document.getElementsByClassName("all--movies--title"),
+  movies__release: document.getElementsByClassName("all--movies--release"),
 };
 
 export { htmlElements };

@@ -519,12 +519,18 @@ hr {
     display: flex;
     color: white;
     font-size: 2.6rem;
-    margin: 2rem auto auto auto;
+    margin: 2rem auto 3rem auto;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
-    vertical-align: center;
+    border-left: .5px solid #d498e8;
+    border-right: .5px solid #8dcaff;
+    box-shadow: 0px .5px 0px 0px #d498e8, 0px -.5px 0px 0px #8dcaff;
+    width: 26rem;
+    border-radius: 1.1rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
 }
+
 
 .all__movies--pagination span{
     padding-right: 1rem;
@@ -537,7 +543,7 @@ hr {
     display: inline-block;
     background: transparent url("../../images/back.svg") no-repeat;
     background-size: contain;
-    height: 3.5rem;
+    height: 3rem;
     width: 3rem;
     flex: 0 0 5rem;
     padding-right: 2rem;
@@ -545,6 +551,7 @@ hr {
     transform: scaleX(-1);
     position: relative;
     z-index: 9;
+    outline: none;
 }
 
 
@@ -552,20 +559,20 @@ hr {
     background-color: #d498e8;
     color: #FFFFFF;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding: .4rem 1.5rem .4rem 1.5rem;
 }
 
 #pagination--3{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #pagination--4{
     background-color: #8dcaff;
     color:#FFFFFF;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding: .4rem 1.5rem .4rem 1.5rem;
 }
@@ -575,10 +582,11 @@ hr {
     display: inline-block;
     background: transparent url("../../images/next.svg") no-repeat;
     background-size: contain;
-    height: 3.5rem;
+    height: 3rem;
     width: 3rem;
     flex: 0 0 5rem;
     margin-left: 2rem;
     position: relative;
     z-index: 9;
+    outline: none;
 }
