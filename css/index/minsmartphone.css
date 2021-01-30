@@ -119,6 +119,7 @@ header {
     width: 5rem;
     flex: 0 0 5rem;
     margin-right: 2.5rem;
+    animation: shake 5s linear infinite;
 }
 
 .sidebar__input--container {
@@ -183,12 +184,22 @@ header {
     margin-right: 1.5rem;
     background-color: #FFFFFF;
     padding: 0;
+    transition: .2s;
+}
+
+#login__button:active {
+    transform: translateY(5px);
 }
 
 #sing__up--button{
     padding: 0;
     background-color: #d498e8;
     color: #FFFFFF;
+    transition: .2s;
+}
+
+#sing__up--button:active{
+    transform: translateY(5px);
 }
 
 .sidebar__menu {
@@ -525,8 +536,8 @@ hr {
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     width: 26rem;
-    padding-top: .9rem;
-    padding-bottom: .9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 

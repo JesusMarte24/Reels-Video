@@ -43,6 +43,7 @@ function Pagination() {
           ].release_date.slice(0, 4);
         }
       });
+    htmlElements.slides__button.scrollIntoView();
   });
 
   htmlElements.pagination__5.addEventListener("click", async () => {
@@ -71,6 +72,8 @@ function Pagination() {
           ].release_date.slice(0, 4);
         }
       });
+
+    htmlElements.slides__button.scrollIntoView();
   });
 }
 

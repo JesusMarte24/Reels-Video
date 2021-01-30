@@ -10,6 +10,7 @@ let htmlElements = {
   slides__rating: document.getElementsByClassName("slide--rating"),
   slides__release: document.getElementsByClassName("slide--release"),
   slides__overview: document.getElementsByClassName("slide--overview"),
+  slides__button: document.getElementById("slide--button"),
   pagination: document.getElementById("pagination"),
   pagination__1: document.getElementById("pagination--1"),
   pagination__2: document.getElementById("pagination--2"),
