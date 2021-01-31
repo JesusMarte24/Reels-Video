@@ -43,7 +43,8 @@ function Pagination() {
           ].release_date.slice(0, 4);
         }
       });
-    htmlElements.slides__button.scrollIntoView();
+    // htmlElements.slides__button.scrollIntoView();
+    window.scrollTo(0, 500);
   });
 
   htmlElements.pagination__5.addEventListener("click", async () => {
@@ -73,7 +74,8 @@ function Pagination() {
         }
       });
 
-    htmlElements.slides__button.scrollIntoView();
+    // htmlElements.slides__button.scrollIntoView();
+    window.scrollTo(0, 500);
   });
 }
 
