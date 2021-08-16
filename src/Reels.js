@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './components/Header';
 import { MainSection } from './components/MainSection';
+import { Navbar } from './components/Navbar';
 import './styles/Reels.scss';
 
 function Reels() {
@@ -10,6 +11,7 @@ function Reels() {
 			<div className="Reels">
 				<MainSection />
 			</div>
+			<Navbar />
 		</>
 	);
 }
