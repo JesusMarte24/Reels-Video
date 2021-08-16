@@ -1,0 +1,28 @@
+@import '../include-sass/_include-media.scss';
+@import './Header.scss';
+@import './MainSection.scss';
+
+html,
+body {
+	background-color: #282c34;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+.Reels {
+	margin: auto;
+	height: 67.5rem;
+	max-height: 67.5rem;
+	max-width: 37.5rem;
+	position: absolute;
+	width: 37.5rem;
+}
+
+h1 {
+	color: magenta;
+	// @include media ("<=phone") {
+	//   background-color: blue;
+	// }
+}

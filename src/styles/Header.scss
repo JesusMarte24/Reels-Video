@@ -1,19 +1,28 @@
 header {
-    background: transparent linear-gradient(180deg, #121212 0%, #00000080 32%, #00000040 74%, #0000000D 100%) 0% 0% no-repeat padding-box;
-    display: flex;
-    justify-content: space-between;
-    height: 8.7rem;
-    opacity: 1;
-    width: 37.5rem;
-}   
+	background: transparent
+		linear-gradient(
+			180deg,
+			#121212 0%,
+			#00000080 32%,
+			#00000040 74%,
+			#0000000d 100%
+		)
+		0% 0% no-repeat padding-box;
+	display: flex;
+	justify-content: space-between;
+	height: 8.7rem;
+	opacity: 1;
+	position: fixed;
+	width: 37.5rem;
+}
 
 .header--logo {
-    margin: 0 auto .4rem 1.2rem;
-    height: 8.3rem;
-    width: 8.4rem;
+	margin: 0 auto 0.4rem 1.2rem;
+	height: 8.3rem;
+	width: 8.4rem;
 }
 
 .header--avatar {
-    margin: 1.9rem 1.9rem 1.3rem auto;
-    width: 5.5rem;
+	margin: 1.9rem 1.9rem 1.3rem auto;
+	width: 5.5rem;
 }
