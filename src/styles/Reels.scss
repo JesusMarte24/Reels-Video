@@ -2,21 +2,13 @@
 @import './Header.scss';
 @import './MainSection.scss';
 
-html,
-body {
-	background-color: #282c34;
-	box-sizing: border-box;
-	font-size: 62.5%;
-	margin: 0;
-	padding: 0;
-}
-
 .Reels {
 	margin: auto;
+	background-image: url('https://cdn.mobilesyrup.com/wp-content/uploads/2020/06/Spongebob-Squarepants-Movie-Sponge-on-the-Run-scaled.jpg');
 	height: 67.5rem;
 	max-height: 67.5rem;
 	max-width: 37.5rem;
-	position: absolute;
+	position: relative;
 	width: 37.5rem;
 }
 

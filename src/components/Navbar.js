@@ -7,12 +7,15 @@ export const Navbar = () => {
 			<a href="">
 				<li className="fas fa-home"></li>
 			</a>
+
 			<a href="">
 				<li className="fas fa-search"></li>
 			</a>
+
 			<a href="">
 				<li className="fas fa-film"></li>
 			</a>
+
 			<a href="">
 				<li className="fas fa-user-circle"></li>
 			</a>

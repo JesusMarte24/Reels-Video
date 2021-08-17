@@ -9,10 +9,11 @@ export const MainSection = () => {
 			</h1>
 			<p>
 				Esto trata de que si que trata de algo y algo es etc etc. y
-				ponle mas cosas a esto pa que...
+				ponle mas cosas a esto pa que fd etc etc otra vainaa blabla otra
+				vaina
 			</p>
 			<button>
-				<i class="fas fa-play"></i>
+				<i className="fas fa-play"></i>
 				Play
 			</button>
 		</main>

@@ -1,0 +1,28 @@
+.movie__grid {
+	margin: auto;
+	opacity: 1;
+	width: 35.5rem;
+}
+
+.movie__grid--content {
+	display: grid;
+	grid-template-columns: auto auto;
+	background: #ffffff0d 0% 0% no-repeat padding-box;
+	border-radius: 8px;
+	height: 210.4rem;
+	justify-content: space-evenly;
+	margin: auto;
+
+	width: 35.5rem;
+
+	a {
+		border: 1px solid white;
+		border-radius: 1rem;
+		color: white;
+		text-align: center;
+		margin-top: 2rem;
+		margin-bottom: 0;
+		height: 30.8rem;
+		width: 15.6rem;
+	}
+}

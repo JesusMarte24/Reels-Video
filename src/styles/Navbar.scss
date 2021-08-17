@@ -7,9 +7,10 @@
 	display: flex;
 	justify-content: space-evenly;
 	height: 6.5rem;
+	opacity: 1;
 	position: fixed;
 	width: 37.5rem;
-	opacity: 1;
+	z-index: 1;
 
 	a {
 		color: #dddddd;
