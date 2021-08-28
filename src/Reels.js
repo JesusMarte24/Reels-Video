@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { MainSection } from './components/MainSection';
 import { Navbar } from './components/Navbar';
 import { MovieGrid } from './components/MovieGrid';
+import { ShowsGrid } from './components/ShowsGrid';
 import './styles/Reels.scss';
 
 function Reels() {
@@ -13,7 +14,8 @@ function Reels() {
 				<MainSection />
 			</div>
 			<Navbar />
-			<MovieGrid />
+			<MovieGrid title="Trending Now..." pagination={true} />
+			<ShowsGrid />
 		</>
 	);
 }

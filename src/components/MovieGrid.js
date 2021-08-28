@@ -1,11 +1,12 @@
 import React from 'react';
 import { Title } from './Title';
 import '../styles/MovieGrid.scss';
+import { Pagination } from './Pagination';
 
-export const MovieGrid = ({ movies, pagination = false }) => {
+export const MovieGrid = ({ title, movies, pagination = false }) => {
 	return (
 		<section className="movie__grid">
-			<Title title="Trending Now" />
+			<Title title={title} />
 			<div className="movie__grid--content">
 				<a href="">
 					<img src="" alt="" />
@@ -56,6 +57,7 @@ export const MovieGrid = ({ movies, pagination = false }) => {
 					<span>Movie Title</span>
 				</a>
 			</div>
+			{pagination ? <Pagination pageNumber="5" /> : false}
 		</section>
 	);
 };
