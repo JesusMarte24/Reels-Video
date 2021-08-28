@@ -15,7 +15,7 @@ function Reels() {
 			</div>
 			<Navbar />
 			<MovieGrid title="Trending Now..." pagination={true} />
-			<ShowsGrid />
+			<ShowsGrid title={'Tv Shows...'} />
 		</>
 	);
 }
