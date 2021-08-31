@@ -56,6 +56,22 @@ export const MovieGrid = ({ title, movies, pagination = false }) => {
 					<img src="" alt="" />
 					<span>Movie Title</span>
 				</a>
+				<a href="">
+					<img src="" alt="" />
+					<span>Movie Title</span>
+				</a>
+				<a href="">
+					<img src="" alt="" />
+					<span>Movie Title</span>
+				</a>
+				<a href="">
+					<img src="" alt="" />
+					<span>Movie Title</span>
+				</a>
+				<a href="">
+					<img src="" alt="" />
+					<span>Movie Title</span>
+				</a>
 			</div>
 			{pagination ? <Pagination pageNumber="5" /> : false}
 		</section>

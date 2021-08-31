@@ -1,21 +1,21 @@
 import React from 'react';
-import { Header } from './components/Header';
-import { MainSection } from './components/MainSection';
-import { Navbar } from './components/Navbar';
-import { MovieGrid } from './components/MovieGrid';
-import { ShowsGrid } from './components/ShowsGrid';
-import './styles/Reels.scss';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Home } from './components/Home';
+import { Search } from './components/Search';
 
 function Reels() {
 	return (
 		<>
-			<Header />
-			<div className="Reels">
-				<MainSection />
-			</div>
-			<Navbar />
-			<MovieGrid title="Trending Now..." pagination={true} />
-			<ShowsGrid title={'Tv Shows...'} />
+			<Router>
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route path="/search">
+						<Search />
+					</Route>
+				</Switch>
+			</Router>
 		</>
 	);
 }

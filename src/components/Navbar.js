@@ -1,24 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import '../styles/Navbar.scss';
 
 export const Navbar = () => {
 	return (
 		<nav className="navbar">
-			<a href="">
+			<Link to="/">
 				<li className="fas fa-home"></li>
-			</a>
+			</Link>
 
-			<a href="">
+			<Link to="/search">
 				<li className="fas fa-search"></li>
-			</a>
+			</Link>
 
-			<a href="">
+			<Link to="/genres">
 				<li className="fas fa-film"></li>
-			</a>
+			</Link>
 
-			<a href="">
+			<Link to="/profile">
 				<li className="fas fa-user-circle"></li>
-			</a>
+			</Link>
 		</nav>
 	);
 };
