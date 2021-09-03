@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { config } from '../config';
+import ReactStars from 'react-rating-stars-component';
 
+import { config } from '../config';
 import { Header } from './Header';
 import { Navbar } from './Navbar';
 import '../styles/MovieInfo.scss';
@@ -10,6 +11,21 @@ import '../styles/MovieInfo.scss';
 export const MovieInfo = ({ mediaType }) => {
 	let { id } = useParams();
 	const [MovieInfo, setMovieInfo] = useState();
+
+	//Watch List Heart
+	const [Heart, setHeart] = useState(false);
+	const watchList = () => {
+		if (Heart == true) {
+			setHeart(false);
+		} else {
+			setHeart(true);
+		}
+	};
+
+	//Rating Section
+	const ratingChanged = (newRating) => {
+		console.log(newRating);
+	};
 
 	useEffect(() => {
 		const callApi = async () => {
@@ -49,7 +65,10 @@ export const MovieInfo = ({ mediaType }) => {
 					<div>
 						<span>Directed By: {MovieInfo.production_companies[0].name}</span>
 						<span>Released: {MovieInfo.release_date}</span>
-						<span>Rating: {MovieInfo.vote_average}/10</span>
+						<span>
+							Rating:{' '}
+							<small className="rating--media">{MovieInfo.vote_average}/10</small>
+						</span>
 						<span>Genres: {MovieInfo.genres.map((e) => `${e.name}, `)}</span>
 					</div>
 				) : (
@@ -57,7 +76,10 @@ export const MovieInfo = ({ mediaType }) => {
 						<span>Directed By: {MovieInfo.created_by.map((e) => `${e.name}, `)}</span>
 						<span>First Air Date: {MovieInfo.first_air_date}</span>
 						<span>Seasons: {MovieInfo.number_of_seasons}</span>
-						<span>Rating: {MovieInfo.vote_average}/10</span>
+						<span>
+							Rating:
+							<small className="rating--media">{MovieInfo.vote_average}/10</small>
+						</span>
 						<span>Genres: {MovieInfo.genres.map((e) => `${e.name}, `)}</span>
 					</div>
 				)}
@@ -74,6 +96,25 @@ export const MovieInfo = ({ mediaType }) => {
 				frameBorder="0"
 				allowFullScreen
 			></iframe>
+			<div className="watchList__container">
+				<h3>Watch List?</h3>
+				{Heart === false ? (
+					<i className="far fa-heart" onClick={watchList}></i>
+				) : (
+					<i class="fas fa-heart" onClick={watchList}></i>
+				)}
+
+				<h4>Rate it</h4>
+				<ReactStars
+					count={5}
+					emptyIcon={<i className="far fa-star"></i>}
+					onChange={ratingChanged}
+					size={32}
+					fullIcon={<i className="fa fa-star"></i>}
+					activeColor="#ffd700"
+				/>
+			</div>
+
 			<Navbar />
 		</section>
 	);

@@ -51,6 +51,18 @@
             padding-left: 1rem;
             width: 32.4rem;
         }
+
+        .rating--media {
+            border-radius: 0.8rem;
+			background-color: #ffdd40;
+			color: #121212;
+			font-weight: bold;
+			font-size: 1.2rem;
+			height: 1.9rem;
+			margin-left: .5rem;
+			padding: 0.1rem 1.1rem;
+			width: 2.2rem;
+        }
     }
     
     p {
@@ -71,8 +83,45 @@
 }
 
 iframe {
+    display: block;
+    margin: auto;
     margin-top: 2.2rem;
     height: 23rem;
     max-width: 38rem;
+    text-align: center;
     width: 100%;
+}
+
+.watchList__container {
+    align-items: center;
+    color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 40rem;
+    padding-top: 1rem;
+    width: 32.4rem;
+    
+
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    i {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+        color: rgb(228, 106, 106)
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+}
+
+i {
+    &:hover {
+        cursor: pointer;
+    }
 }
