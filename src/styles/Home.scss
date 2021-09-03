@@ -4,12 +4,18 @@
 
 .Home {
 	margin: auto;
-	background-image: url('https://cdn.mobilesyrup.com/wp-content/uploads/2020/06/Spongebob-Squarepants-Movie-Sponge-on-the-Run-scaled.jpg');
 	height: 67.5rem;
 	max-height: 67.5rem;
 	// max-width: 37.5rem;
 	position: relative;
 	width: 100%;
+
+	img {
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+	}
 }
 
 h1 {

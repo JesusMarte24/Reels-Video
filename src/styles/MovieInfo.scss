@@ -1,0 +1,78 @@
+.movie__info--poster {
+	margin: auto;
+	height: 67.5rem;
+	max-height: 67.5rem;
+	// max-width: 37.5rem;
+	position: relative;
+	width: 100%;
+
+	img {
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+	}
+}
+
+.movie__info--about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    width: 32.4rem;
+
+    h1 {
+        color: #DDDDDD;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // border: 1px solid red;
+        margin-top: 2rem;
+        height: auto;
+        width: auto;
+
+        span {
+            color: #DDDDDD;
+            border-bottom: 1.5px solid #39b0e1;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.7rem;
+            margin-bottom: 1.5rem;
+		    height: 4.2rem;
+            padding-left: 1rem;
+            width: 32.4rem;
+        }
+    }
+    
+    p {
+        background: #FFFFFF0D 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        color: #DDDDDD;
+        font-size: 1.4rem;
+        height: 13.8rem;
+        margin-top: 2rem;
+        max-height: 13.8rem;
+        letter-spacing: 0.08rem;
+        padding: 1.9rem 1.4rem 2.4rem 1.3rem;
+        max-width: 40rem;
+        opacity: 1;
+        width: 32.4rem;
+        overflow: scroll;
+    }
+}
+
+iframe {
+    margin-top: 2.2rem;
+    height: 23rem;
+    max-width: 38rem;
+    width: 100%;
+}

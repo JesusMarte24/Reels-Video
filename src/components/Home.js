@@ -12,6 +12,10 @@ export const Home = () => {
 		<div>
 			<Header />
 			<div className="Home">
+				<img
+					src="https://cdn.mobilesyrup.com/wp-content/uploads/2020/06/Spongebob-Squarepants-Movie-Sponge-on-the-Run-scaled.jpg"
+					alt="Slides Background"
+				/>
 				<MainSection />
 			</div>
 			<Navbar />
