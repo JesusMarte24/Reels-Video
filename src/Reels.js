@@ -1,15 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { Home } from './components/Home';
 import { Search } from './components/Search';
 import { MovieInfo } from './components/MovieInfo';
+import { Carrousel } from './components/Carrousel';
 
 function Reels() {
 	return (
 		<>
 			<Router>
 				<Switch>
-					<Route exact path="/">
+					<Route exact path="/home/:id">
 						<Home />
 					</Route>
 					<Route path="/search">
@@ -21,6 +22,10 @@ function Reels() {
 					<Route path="/show/:id">
 						<MovieInfo mediaType={'show'} />
 					</Route>
+					<Route path="/carrousel">
+						<Carrousel />
+					</Route>
+					<Redirect to="/home/1" />
 				</Switch>
 			</Router>
 		</>

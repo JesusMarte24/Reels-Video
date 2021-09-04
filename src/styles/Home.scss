@@ -2,24 +2,10 @@
 @import './Header.scss';
 @import './MainSection.scss';
 
-.Home {
-	margin: auto;
-	height: 67.5rem;
-	max-height: 67.5rem;
-	// max-width: 37.5rem;
-	position: relative;
-	width: 100%;
 
-	img {
-		height: 100%;
-		object-fit: cover;
-		position: absolute;
-		width: 100%;
-	}
-}
 
 h1 {
-	color: magenta;
+	color: #DDDDDD;
 	// @include media ("<=phone") {
 	//   background-color: blue;
 	// }

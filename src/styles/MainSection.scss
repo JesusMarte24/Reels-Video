@@ -1,12 +1,13 @@
 .main__section--info {
+	background: #2b2a2a0d;
+	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 37.4rem;
-	right: 5.3rem;
-	bottom: 7.8rem;
+	bottom: 10%;
 	left: 2rem;
 	height: 22.3rem;
+	max-height: 22.3rem;
 	width: 30.2rem;
 
 	h1 {
@@ -44,14 +45,18 @@
 		width: 27.7rem;
 	}
 
-	button {
+	a {
 		background-color: #dddddd;
 		border: 1px solid transparent;
 		border-radius: 0.8rem;
+		color: #121212;
+		display: inline-block;
 		font-size: 1.8rem;
 		font-weight: bold;
 		margin: 0 auto auto 1.2rem;
+		line-height: 4rem;
 		height: 4rem;
+		text-align: center;
 		width: 12rem;
 
 		i {

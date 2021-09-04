@@ -15,7 +15,7 @@ export const MovieInfo = ({ mediaType }) => {
 	//Watch List Heart
 	const [Heart, setHeart] = useState(false);
 	const watchList = () => {
-		if (Heart == true) {
+		if (Heart === true) {
 			setHeart(false);
 		} else {
 			setHeart(true);

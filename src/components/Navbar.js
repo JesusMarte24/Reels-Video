@@ -6,7 +6,7 @@ import '../styles/Navbar.scss';
 export const Navbar = () => {
 	return (
 		<nav className="navbar">
-			<Link to="/">
+			<Link to="/home/1">
 				<li className="fas fa-home"></li>
 			</Link>
 

@@ -46,12 +46,8 @@ export const Search = () => {
 							.map((e) => (
 								<SearchElement
 									key={e.id}
-									title={
-										e.title ||
-										e.original_title ||
-										e.name ||
-										e.original_name
-									}
+									id={e.id}
+									title={e.title || e.original_title || e.name || e.original_name}
 									img={e.poster_path}
 									rate={e.vote_average}
 									media={e.media_type}

@@ -1,0 +1,35 @@
+#carrousel {
+    margin: auto;
+	height: auto;
+    // max-height: 67.5rem;
+	// max-width: 37.5rem;
+	width: 100%;
+}
+
+.carousel-inner {
+	margin: auto;
+	height: auto;
+	max-height: 67.5rem;
+	// max-width: 37.5rem;
+	width: 100%;
+
+    .carousel--item {
+        margin: auto;
+        height: auto;
+        max-height: 67.5rem;
+        // max-width: 37.5rem;
+        width: 100%;
+    }
+    img {
+		height: 100%;
+		object-fit: contain;
+		width: 100%;
+	}
+    
+}
+
+.carousel-control-prev, .carousel-control-next {
+	span {
+		display: none;
+	}
+}
