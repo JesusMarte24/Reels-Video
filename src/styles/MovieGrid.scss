@@ -10,20 +10,35 @@
 	background: #ffffff0d 0% 0% no-repeat padding-box;
 	border-radius: 8px;
 	height: auto;
-	max-height: 280rem;
+	// max-height: 280rem;
 	justify-content: space-evenly;
 	margin: auto;
 	width: 35.5rem;
 
 	a {
-		border: 1px solid white;
+		display: inline-block;
 		border-radius: 1rem;
 		color: white;
-		text-align: center;
+		height: 28.8rem;
 		margin-top: 2rem;
-		margin-bottom: 1.5rem;
-		height: 30.8rem;
+		margin-bottom: 1rem;
+		text-decoration: none;
+		text-align: center;
 		width: 15.6rem;
+
+		img {
+			border-radius: 1rem;
+			height: 80%;
+			margin-bottom: 1rem;
+			object-position: center;
+			object-fit: cover;
+			width: 100%;
+		}
+		span {
+			color: #dddddd;
+			font-size: 1.2rem;
+			text-align: center;
+		}
 	}
 
 }

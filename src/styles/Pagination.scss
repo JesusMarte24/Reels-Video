@@ -10,6 +10,10 @@
 	max-width: 35.5rem;
 	width: 35.5rem;
 
+	a {
+		text-decoration: none;
+	}
+
 	span {
 		background: #ffffff0d 0% 0% no-repeat padding-box;
 		border-radius: 5rem;
@@ -22,14 +26,21 @@
 	}
 }
 
+
 .pagination--back {
 	color: #d19fe4;
 	font-size: 4.5rem;
 	font-weight: normal;
+	&:visited {
+		color: #d19fe4;
+	}
 }
 
 .pagination--next {
 	color: #39b0e1;
 	font-size: 4.5rem;
 	font-weight: normal;
+	&:visited {
+		color: #39b0e1;
+	}
 }

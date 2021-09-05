@@ -41,8 +41,8 @@ export const Search = () => {
 			<div className="search__container">
 				{Results.length > 0 && Results[0].data.reqResult.length > 0
 					? Results[0].data.reqResult
-							.slice(0, 3)
 							.filter((e) => e.media_type !== 'person')
+							.slice(0, 3)
 							.map((e) => (
 								<SearchElement
 									key={e.id}

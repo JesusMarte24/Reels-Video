@@ -101,7 +101,7 @@ export const MovieInfo = ({ mediaType }) => {
 				{Heart === false ? (
 					<i className="far fa-heart" onClick={watchList}></i>
 				) : (
-					<i class="fas fa-heart" onClick={watchList}></i>
+					<i className="fas fa-heart" onClick={watchList}></i>
 				)}
 
 				<h4>Rate it</h4>

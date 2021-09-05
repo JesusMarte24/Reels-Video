@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 import { config } from '../config';
@@ -11,18 +11,29 @@ import { ShowsGrid } from '../components/ShowsGrid';
 import '../styles/Home.scss';
 
 export const Home = () => {
-	let { id } = useParams();
 	const [CarrouselData, setCarrouselData] = useState();
+	const [MovieGridData, setMovieGridData] = useState();
+	let { id } = useParams();
+
 	useEffect(() => {
-		const callApi = async () => {
+		const CallApi = async () => {
 			let carrouselData = await axios.get(`${config.api.baseUrl}/api/home`);
 			carrouselData = carrouselData.data.reqResult;
 			setCarrouselData(carrouselData);
 		};
-		callApi();
+		CallApi();
 	}, []);
 
-	if (!CarrouselData) {
+	useEffect(() => {
+		const CallApi = async () => {
+			let GridData = await axios.get(`${config.api.baseUrl}/api/home/grid/${id}`);
+			GridData = GridData.data.reqResult;
+			setMovieGridData(GridData);
+		};
+		CallApi();
+	}, [id]);
+
+	if (!CarrouselData || !MovieGridData) {
 		return <h1>Loading...</h1>;
 	}
 
@@ -31,7 +42,12 @@ export const Home = () => {
 			<Header />
 			<Carrousel data={CarrouselData} />
 			<Navbar />
-			<MovieGrid title="Trending Now..." pagination={true} />
+			<MovieGrid
+				title="Trending Now..."
+				pagination={true}
+				movies={MovieGridData}
+				pageNumber={id}
+			/>
 			<ShowsGrid title={'Tv Shows...'} />
 		</div>
 	);
