@@ -7,6 +7,7 @@ import { config } from '../config';
 import { Header } from './Header';
 import { Navbar } from './Navbar';
 import '../styles/MovieInfo.scss';
+import { Loader } from './Loader';
 
 export const MovieInfo = ({ mediaType }) => {
 	let { id } = useParams();
@@ -37,7 +38,7 @@ export const MovieInfo = ({ mediaType }) => {
 	}, [id, mediaType]);
 
 	if (!MovieInfo) {
-		return <h1>Loading...</h1>;
+		return <Loader />;
 	}
 
 	return (

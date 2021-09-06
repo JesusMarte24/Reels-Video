@@ -9,6 +9,7 @@ import { Navbar } from '../components/Navbar';
 import { MovieGrid } from '../components/MovieGrid';
 import { ShowsGrid } from '../components/ShowsGrid';
 import '../styles/Home.scss';
+import { Loader } from './Loader';
 
 export const Home = () => {
 	const [CarrouselData, setCarrouselData] = useState();
@@ -34,7 +35,7 @@ export const Home = () => {
 	}, [id]);
 
 	if (!CarrouselData || !MovieGridData) {
-		return <h1>Loading...</h1>;
+		return <Loader />;
 	}
 
 	return (
