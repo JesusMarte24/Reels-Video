@@ -1,6 +1,6 @@
 export const config = {
 	api: {
-		baseUrl: 'http://localhost:4000',
+		baseUrl: 'https://reels--video.herokuapp.com',
 		baseVideoUrl: 'https://www.youtube.com/embed',
 		imgURL: 'http://image.tmdb.org/t/p', // /{movieSize}/{movieIMGid}
 		imgagesSizes: {

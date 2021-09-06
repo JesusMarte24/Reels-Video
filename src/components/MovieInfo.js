@@ -45,7 +45,7 @@ export const MovieInfo = ({ mediaType }) => {
 			<Header />
 			<div className="movie__info--poster">
 				<img
-					src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[3]}${MovieInfo.poster_path}`}
+					src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[5]}${MovieInfo.poster_path}`}
 					alt={`About: ${
 						MovieInfo.title ||
 						MovieInfo.original_title ||
