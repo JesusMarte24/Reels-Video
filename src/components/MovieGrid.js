@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { config } from '../config';
@@ -8,8 +8,10 @@ import { Pagination } from './Pagination';
 import '../styles/MovieGrid.scss';
 
 export const MovieGrid = ({ title, movies, pagination = false, pageNumber }) => {
+	const gridContentRef = useRef();
+
 	return (
-		<section className="movie__grid">
+		<section className="movie__grid" ref={gridContentRef}>
 			<Title title={title} />
 			<div className="movie__grid--content">
 				{movies.map((e) => (
@@ -29,7 +31,9 @@ export const MovieGrid = ({ title, movies, pagination = false, pageNumber }) => 
 					</Link>
 				))}
 			</div>
-			{pagination ? <Pagination pageNumber={parseInt(pageNumber)} /> : null}
+			{pagination ? (
+				<Pagination pageNumber={parseInt(pageNumber)} scrollRef={gridContentRef} />
+			) : null}
 		</section>
 	);
 };

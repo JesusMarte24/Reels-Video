@@ -13,9 +13,14 @@ header {
 	height: 7rem;
 	opacity: 1;
 	position: fixed;
+	transition: .3s;
 	top: 0;
 	z-index: 1;
 	width: 100%;
+}
+
+.header.active{
+	background-color: #121212;
 }
 
 .header--logo {

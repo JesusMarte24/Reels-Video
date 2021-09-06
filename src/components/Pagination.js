@@ -3,18 +3,28 @@ import { Link } from 'react-router-dom';
 
 import '../styles/Pagination.scss';
 
-export const Pagination = ({ pageNumber }) => {
+export const Pagination = ({ pageNumber, scrollRef }) => {
+	const handleScroll = () => {
+		scrollRef.current.scrollIntoView();
+	};
+
 	return (
 		<div className="pagination--container">
-			<Link
-				to={`/home/${parseInt(pageNumber - 1)}`}
-				className="fas fa-chevron-left pagination--back"
-			></Link>
+			{pageNumber === 1 ? null : (
+				<Link
+					to={`/home/${parseInt(pageNumber - 1)}`}
+					className="fas fa-chevron-left pagination--back"
+					onClick={handleScroll}
+				></Link>
+			)}
 			<span>{pageNumber}</span>
-			<Link
-				to={`/home/${parseInt(pageNumber + 1)}`}
-				className="fas fa-chevron-right pagination--next"
-			></Link>
+			{pageNumber === 1000 ? null : (
+				<Link
+					to={`/home/${parseInt(pageNumber + 1)}`}
+					className="fas fa-chevron-right pagination--next"
+					onClick={handleScroll}
+				></Link>
+			)}
 		</div>
 	);
 };
