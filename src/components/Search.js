@@ -11,6 +11,7 @@ export const Search = () => {
 	const [Results, setResults] = useState('');
 
 	useEffect(() => {
+		let isMounted = true;
 		const callApi = async () => {
 			if (SearchTermn.length > 1) {
 				let apiResult = await axios.get(
@@ -19,7 +20,12 @@ export const Search = () => {
 				setResults([apiResult]);
 			}
 		};
-		callApi();
+		if (isMounted) {
+			callApi();
+		}
+		return () => {
+			isMounted = false;
+		};
 	}, [SearchTermn]);
 
 	const onSubmit = (e) => {

@@ -5,7 +5,6 @@ import '../styles/ShowsGrid.scss';
 import { Title } from './Title';
 
 export const ShowsGrid = ({ title, data }) => {
-	console.log(data);
 	return (
 		<section className="shows--container">
 			<Title title={title} />

@@ -18,30 +18,49 @@ export const Home = () => {
 	let { id } = useParams();
 
 	useEffect(() => {
+		//Avoid Try to change state to a unmounted component
+		let isMounted = true;
 		const CallApi = async () => {
 			let carrouselData = await axios.get(`${config.api.baseUrl}/api/home`);
 			carrouselData = carrouselData.data.reqResult;
 			setCarrouselData(carrouselData);
 		};
-		CallApi();
+		if (isMounted) {
+			CallApi();
+		}
+		return () => {
+			isMounted = false;
+		};
 	}, []);
 
 	useEffect(() => {
+		let isMounted = true;
 		const CallApi = async () => {
 			let GridData = await axios.get(`${config.api.baseUrl}/api/home/grid/${id}`);
 			GridData = GridData.data.reqResult;
 			setMovieGridData(GridData);
 		};
-		CallApi();
+		if (isMounted) {
+			CallApi();
+		}
+		return () => {
+			isMounted = false;
+		};
 	}, [id]);
 
 	useEffect(() => {
+		let isMounted = true;
 		const CallApi = async () => {
 			let tvData = await axios.get(`${config.api.baseUrl}/api/home/tv`);
 			tvData = tvData.data.reqResult;
 			setShowGrid(tvData);
 		};
-		CallApi();
+		if (isMounted) {
+			CallApi();
+		}
+		return () => {
+			isMounted = false;
+		};
 	}, []);
 
 	if (!CarrouselData || !MovieGridData || !ShowGrid) {

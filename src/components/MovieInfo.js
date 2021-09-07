@@ -29,12 +29,19 @@ export const MovieInfo = ({ mediaType }) => {
 	};
 
 	useEffect(() => {
+		let isMounted = true;
 		const callApi = async () => {
 			let movieData = await axios.get(`${config.api.baseUrl}/api/${mediaType}/info/${id}`);
 			movieData = movieData.data.reqResult;
 			setMovieInfo(movieData);
 		};
-		callApi();
+		if (isMounted) {
+			callApi();
+		}
+
+		return () => {
+			isMounted = false;
+		};
 	}, [id, mediaType]);
 
 	if (!MovieInfo) {
@@ -86,17 +93,25 @@ export const MovieInfo = ({ mediaType }) => {
 				)}
 				<p>{MovieInfo.overview}</p>
 			</div>
-			<iframe
-				title={
-					MovieInfo.title ||
-					MovieInfo.original_title ||
-					MovieInfo.name ||
-					MovieInfo.original_name
-				}
-				src={`${config.api.baseVideoUrl}/${MovieInfo.videos.results[0].key}`}
-				frameBorder="0"
-				allowFullScreen
-			></iframe>
+			{
+				// Check if there is video
+				MovieInfo.videos.results.length > 0 ? (
+					<iframe
+						title={
+							MovieInfo.title ||
+							MovieInfo.original_title ||
+							MovieInfo.name ||
+							MovieInfo.original_name
+						}
+						src={`${config.api.baseVideoUrl}/${MovieInfo.videos.results[0].key}`}
+						frameBorder="0"
+						allowFullScreen
+					></iframe>
+				) : (
+					''
+				)
+			}
+
 			<div className="watchList__container">
 				<h3>Watch List?</h3>
 				{Heart === false ? (
