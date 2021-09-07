@@ -1,0 +1,49 @@
+.genres--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 10rem;
+    width: 100%;
+
+
+
+    
+    h4 {
+        color: #DDDDDD;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        i {
+            color: #39b0e1;
+            margin-left: .7rem;
+        }
+    }
+
+
+    div {
+        border-top: .1rem solid white;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+}
+
+a {
+    color: #dddddd;
+    font-size: 1.4rem;
+    margin: 1rem;
+    padding-left: 2rem;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &:visited{
+        color: #DDDDDD;
+    }
+}

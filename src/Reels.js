@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import { Home } from './components/Home';
 import { Search } from './components/Search';
 import { MovieInfo } from './components/MovieInfo';
+import { Genres } from './components/Genres';
 
 function Reels() {
 	return (
@@ -20,6 +21,9 @@ function Reels() {
 					</Route>
 					<Route path="/show/:id">
 						<MovieInfo mediaType={'show'} />
+					</Route>
+					<Route path="/genres">
+						<Genres />
 					</Route>
 					<Redirect to="/home/1" />
 				</Switch>
