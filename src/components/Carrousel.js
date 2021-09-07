@@ -5,18 +5,22 @@ import { MainSection } from './MainSection';
 
 export const Carrousel = ({ data }) => {
 	return (
-		<div id="carrousel" className="carousel slide" data-ride="carousel">
+		<div id="carrousel--tv" className="carousel slide" data-ride="carousel">
 			<ol className="carousel-indicators">
 				{data.map((e, i) =>
 					i === 0 ? (
 						<li
 							key={e.id}
-							data-target="#carrousel"
+							data-target="#carrousel--tv"
 							data-slide-to={i.toString()}
 							className="active"
 						></li>
 					) : (
-						<li key={e.id} data-target="#carrousel" data-slide-to={i.toString()}></li>
+						<li
+							key={e.id}
+							data-target="#carrousel--tv"
+							data-slide-to={i.toString()}
+						></li>
 					)
 				)}
 			</ol>
@@ -59,11 +63,21 @@ export const Carrousel = ({ data }) => {
 			</div>
 
 			{/* Previous & Next Buttons :v */}
-			<a className="carousel-control-prev" href="#carrousel" role="button" data-slide="prev">
+			<a
+				className="carousel-control-prev"
+				href="#carrousel--tv"
+				role="button"
+				data-slide="prev"
+			>
 				<span className="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span className="sr-only">Previous</span>
 			</a>
-			<a className="carousel-control-next" href="#carrousel" role="button" data-slide="next">
+			<a
+				className="carousel-control-next"
+				href="#carrousel--tv"
+				role="button"
+				data-slide="next"
+			>
 				<span className="carousel-control-next-icon" aria-hidden="true"></span>
 				<span className="sr-only">Next</span>
 			</a>

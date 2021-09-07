@@ -14,6 +14,7 @@ import { Loader } from './Loader';
 export const Home = () => {
 	const [CarrouselData, setCarrouselData] = useState();
 	const [MovieGridData, setMovieGridData] = useState();
+	const [ShowGrid, setShowGrid] = useState();
 	let { id } = useParams();
 
 	useEffect(() => {
@@ -34,10 +35,18 @@ export const Home = () => {
 		CallApi();
 	}, [id]);
 
-	if (!CarrouselData || !MovieGridData) {
+	useEffect(() => {
+		const CallApi = async () => {
+			let tvData = await axios.get(`${config.api.baseUrl}/api/home/tv`);
+			tvData = tvData.data.reqResult;
+			setShowGrid(tvData);
+		};
+		CallApi();
+	}, []);
+
+	if (!CarrouselData || !MovieGridData || !ShowGrid) {
 		return <Loader />;
 	}
-
 	return (
 		<div>
 			<Header />
@@ -49,7 +58,7 @@ export const Home = () => {
 				movies={MovieGridData}
 				pageNumber={id}
 			/>
-			<ShowsGrid title={'Tv Shows...'} />
+			<ShowsGrid title={'Tv Shows...'} data={ShowGrid} />
 		</div>
 	);
 };
