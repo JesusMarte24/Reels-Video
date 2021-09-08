@@ -3,9 +3,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 40rem;
+    height: 80rem;
     margin: auto;
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
 .profile__menu--anchor{
@@ -17,6 +17,8 @@
     line-height: 5.4rem;
     margin-top: 4rem;
     opacity: 1;
+    outline: none;
+
     text-align: center;
     width: 20.1rem;
 }
@@ -25,3 +27,18 @@
     margin-left: 1rem;
 }
 
+.profile--signout {
+    color: #121212;
+    border: .1rem solid transparent;
+    border-radius: 2.5rem;
+    background-color: #EEEEEE;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 5rem;
+    line-height: 5rem;
+    margin-top: 12rem;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    width: 15rem;
+}

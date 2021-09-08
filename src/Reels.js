@@ -6,6 +6,7 @@ import { MovieInfo } from './components/MovieInfo';
 import { Genres } from './components/Genres';
 import { Login } from './components/Login';
 import { Profile } from './components/Profile';
+import { Signup } from './components/Signup';
 
 function Reels() {
 	return (
@@ -32,6 +33,9 @@ function Reels() {
 					</Route>
 					<Route path="/profile/:user">
 						<Profile />
+					</Route>
+					<Route path="/new/user">
+						<Signup />
 					</Route>
 					<Redirect to="/home/1" />
 				</Switch>

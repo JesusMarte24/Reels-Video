@@ -20,6 +20,7 @@ export const Profile = () => {
 				<i class="fas fa-info-circle profile__menu--icon"></i>
 				<span className="profile__menu--item">About</span>
 			</Link>
+			<Link className="profile--signout">Sign Out</Link>
 			<Navbar />
 		</section>
 	);

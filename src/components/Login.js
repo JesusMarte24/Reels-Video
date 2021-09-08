@@ -17,7 +17,9 @@ export const Login = () => {
 				</Link>
 			</div>
 
-			<Link className="signup--btn login--buttons">Sign Up</Link>
+			<Link to="/new/user" className="signup--btn login--buttons">
+				Sign Up
+			</Link>
 			<Navbar />
 		</section>
 	);

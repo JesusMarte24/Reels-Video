@@ -1,0 +1,22 @@
+.signup--container {
+    align-items: center;
+    display: flex;
+    height: 40.2rem;
+    flex-direction: column;
+    margin-top: 12rem;
+}
+
+.signup__btn--container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 25rem;
+    padding-top: 1rem;
+}
+
+.signup--span {
+    color: #DDDDDD;
+    font-size: 1.4rem;
+    margin: 1rem auto 1rem auto;
+}
