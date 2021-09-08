@@ -12,7 +12,9 @@ export const Login = () => {
 			<div className="login--form">
 				<Input required placeholder={'Email...'} type="email" />
 				<Input required placeholder={'Password...'} type="password" />
-				<Link className="login--btn login--buttons">Login</Link>
+				<Link to="/profile/jesus" className="login--btn login--buttons">
+					Login
+				</Link>
 			</div>
 
 			<Link className="signup--btn login--buttons">Sign Up</Link>

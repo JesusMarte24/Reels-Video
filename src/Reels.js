@@ -5,6 +5,7 @@ import { Search } from './components/Search';
 import { MovieInfo } from './components/MovieInfo';
 import { Genres } from './components/Genres';
 import { Login } from './components/Login';
+import { Profile } from './components/Profile';
 
 function Reels() {
 	return (
@@ -26,8 +27,11 @@ function Reels() {
 					<Route path="/genres">
 						<Genres />
 					</Route>
-					<Route path="/profile">
+					<Route exact path="/profile">
 						<Login />
+					</Route>
+					<Route path="/profile/:user">
+						<Profile />
 					</Route>
 					<Redirect to="/home/1" />
 				</Switch>

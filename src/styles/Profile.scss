@@ -1,0 +1,27 @@
+.profile--container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 40rem;
+    margin: auto;
+    margin-top: 12rem;
+}
+
+.profile__menu--anchor{
+    background: #FFFFFF0D 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    color: #DDDDDD;
+    font-size: 1.8rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
+    margin-top: 4rem;
+    opacity: 1;
+    text-align: center;
+    width: 20.1rem;
+}
+
+.profile__menu--item{
+    margin-left: 1rem;
+}
+
