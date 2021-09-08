@@ -12,9 +12,9 @@
     opacity: 1;
     width: 34rem;
 
-    input {
+    .search--input {
         background-color: transparent;
-        border: 1px solid transparent;
+        border: .1rem solid transparent;
         font-size: 1.6rem;
         color: #DDDDDD;
         height: 3.5rem;
@@ -23,8 +23,8 @@
         width: 88%;
 
         &::placeholder {
-            opacity: .7;
-        }
+            opacity: .5;
+        } 
     }
 
     button {

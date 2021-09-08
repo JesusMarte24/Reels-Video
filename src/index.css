@@ -8,3 +8,11 @@ body {
 	padding: 0;
 	scroll-behavior: smooth;
 }
+
+button {
+	outline: none;
+}
+
+button:hover {
+	outline: none;
+}

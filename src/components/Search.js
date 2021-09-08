@@ -41,6 +41,7 @@ export const Search = () => {
 					onChange={(e) => setSearchTermn(e.target.value)}
 					type="text"
 					placeholder="Type Something..."
+					className="search--input"
 				/>
 				<button type="submit" className="fas fa-search"></button>
 			</form>

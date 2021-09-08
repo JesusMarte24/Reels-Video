@@ -14,39 +14,39 @@ export const Genres = () => {
 					<i className="fas fa-chevron-down"></i>
 				</h4>
 				<div>
-					<Link>Popular</Link>
-					<Link>Top Rated</Link>
+					<Link className="genres--anchor">Popular</Link>
+					<Link className="genres--anchor">Top Rated</Link>
 				</div>
 				<h4>
 					Film Genres
 					<i className="fas fa-chevron-down"></i>
 				</h4>
 				<div>
-					<Link>Action</Link>
-					<Link>Adventure</Link>
-					<Link>Animation</Link>
-					<Link>Comedy</Link>
-					<Link>Crime</Link>
-					<Link>Documentary</Link>
-					<Link>Drama</Link>
-					<Link>Family</Link>
-					<Link>Fantasy</Link>
-					<Link>History</Link>
-					<Link>Horror</Link>
-					<Link>Musical</Link>
-					<Link>Mystery</Link>
-					<Link>Romance</Link>
-					<Link>Sci-Fi</Link>
-					<Link>Thriller</Link>
-					<Link>War</Link>
+					<Link className="genres--anchor">Action</Link>
+					<Link className="genres--anchor">Adventure</Link>
+					<Link className="genres--anchor">Animation</Link>
+					<Link className="genres--anchor">Comedy</Link>
+					<Link className="genres--anchor">Crime</Link>
+					<Link className="genres--anchor">Documentary</Link>
+					<Link className="genres--anchor">Drama</Link>
+					<Link className="genres--anchor">Family</Link>
+					<Link className="genres--anchor">Fantasy</Link>
+					<Link className="genres--anchor">History</Link>
+					<Link className="genres--anchor">Horror</Link>
+					<Link className="genres--anchor">Musical</Link>
+					<Link className="genres--anchor">Mystery</Link>
+					<Link className="genres--anchor">Romance</Link>
+					<Link className="genres--anchor">Sci-Fi</Link>
+					<Link className="genres--anchor">Thriller</Link>
+					<Link className="genres--anchor">War</Link>
 				</div>
 				<h4>
 					Movies
 					<i className="fas fa-chevron-down"></i>
 				</h4>
 				<div>
-					<Link>Most Viewed</Link>
-					<Link>Rankings</Link>
+					<Link className="genres--anchor">Most Viewed</Link>
+					<Link className="genres--anchor">Rankings</Link>
 				</div>
 			</section>
 			<Navbar />

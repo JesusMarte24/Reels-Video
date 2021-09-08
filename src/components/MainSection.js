@@ -15,7 +15,7 @@ export const MainSection = ({ id, title, rating, overview, media }) => {
 				<span>{`${rating}/10`}</span>
 			</h1>
 			<p>{overview}</p>
-			<Link to={`/${media}/${id}`}>
+			<Link to={`/${media}/${id}`} className="btn--play">
 				<i className="fas fa-play"></i>
 				Play
 			</Link>

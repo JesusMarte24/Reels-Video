@@ -3,18 +3,19 @@ import { Header } from './Header';
 import { Input } from './Input';
 import { Navbar } from './Navbar';
 import '../styles/Login.scss';
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
 	return (
 		<section className="login--container">
 			<Header />
 			<div className="login--form">
-				<Input placeholder={'Email...'} type="text" />
-				<Input placeholder={'Password...'} type="password" />
-				<button className="login--btn">Login</button>
+				<Input required placeholder={'Email...'} type="email" />
+				<Input required placeholder={'Password...'} type="password" />
+				<Link className="login--btn login--buttons">Login</Link>
 			</div>
 
-			<button className="signup--btn">Sign Up</button>
+			<Link className="signup--btn login--buttons">Sign Up</Link>
 			<Navbar />
 		</section>
 	);

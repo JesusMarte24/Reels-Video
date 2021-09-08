@@ -45,7 +45,7 @@
 		width: 27.7rem;
 	}
 
-	a {
+	.btn--play {
 		background-color: #dddddd;
 		border: 1px solid transparent;
 		border-radius: 0.8rem;
@@ -55,6 +55,7 @@
 		font-weight: bold;
 		height: 4rem;
 		line-height: 4rem;
+		padding-left: 0rem;
 		margin: 0 auto 1rem 1.2rem;
 		text-align: center;
 		width: 12rem;
