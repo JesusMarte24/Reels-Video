@@ -1,0 +1,22 @@
+input {
+    background: #FFFFFF0D 0% 0% no-repeat padding-box;
+    border-radius: 1rem;
+    color: #DDDDDD;
+    font-size: 1.6rem;
+    height: 5rem;
+    margin-bottom: 4rem;
+    outline: none;
+    padding: 1.6rem 1.5rem 1.5rem 1.5rem;
+    width: 34rem;
+
+    &:focus {
+        border: .1rem solid #39b0e1;
+    }
+
+    &::placeholder {
+        color: #DDDDDD;
+        padding: 1.6rem auto 1.5rem 1.5rem;
+        opacity: .5;
+
+    }
+}

@@ -1,0 +1,36 @@
+.login--container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.login--form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: flex-start;
+    margin-top: 12rem;
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: .1rem solid transparent;
+    border-radius: 2.5rem;
+    height: 5rem;
+    outline: none;
+    width: 15rem;
+}
+
+.login--btn {
+    color: #121212;
+    background-color: #EEEEEE;
+}
+
+.signup--btn {
+    color: #DDDDDD;
+    background-color: #d19fe4;
+}

@@ -4,6 +4,7 @@ import { Home } from './components/Home';
 import { Search } from './components/Search';
 import { MovieInfo } from './components/MovieInfo';
 import { Genres } from './components/Genres';
+import { Login } from './components/Login';
 
 function Reels() {
 	return (
@@ -24,6 +25,9 @@ function Reels() {
 					</Route>
 					<Route path="/genres">
 						<Genres />
+					</Route>
+					<Route path="/profile">
+						<Login />
 					</Route>
 					<Redirect to="/home/1" />
 				</Switch>
