@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
 import { config } from '../config.js';
 import { Header } from './Header';
 import { Navbar } from './Navbar';
@@ -7,6 +8,7 @@ import '../styles/Search.scss';
 import axios from 'axios';
 
 export const Search = () => {
+	const history = useHistory();
 	const [SearchTermn, setSearchTermn] = useState('');
 	const [Results, setResults] = useState('');
 
@@ -30,7 +32,7 @@ export const Search = () => {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		console.log(Results);
+		history.push(`/search/${SearchTermn.replace(/\s/g, '+')}`);
 	};
 
 	return (

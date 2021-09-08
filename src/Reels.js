@@ -7,6 +7,7 @@ import { Genres } from './components/Genres';
 import { Login } from './components/Login';
 import { Profile } from './components/Profile';
 import { Signup } from './components/Signup';
+import { SearchResult } from './components/SearchResult';
 
 function Reels() {
 	return (
@@ -16,8 +17,11 @@ function Reels() {
 					<Route exact path="/home/:id">
 						<Home />
 					</Route>
-					<Route path="/search">
+					<Route exact path="/search">
 						<Search />
+					</Route>
+					<Route path="/search/:name">
+						<SearchResult />
 					</Route>
 					<Route path="/movie/:id">
 						<MovieInfo mediaType={'movie'} />
