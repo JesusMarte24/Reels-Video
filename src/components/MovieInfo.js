@@ -71,24 +71,52 @@ export const MovieInfo = ({ mediaType }) => {
 				</h1>
 				{mediaType === 'movie' ? (
 					<div>
-						<span>Directed By: {MovieInfo.production_companies[0].name}</span>
+						{MovieInfo.production_companies.length > 0 ? (
+							<span>Directed By: {MovieInfo.production_companies[0].name}</span>
+						) : (
+							<span>{'Directed By: Not Available'}</span>
+						)}
 						<span>Released: {MovieInfo.release_date}</span>
 						<span>
 							Rating:{' '}
 							<small className="rating--media">{MovieInfo.vote_average}/10</small>
 						</span>
-						<span>Genres: {MovieInfo.genres.map((e) => `${e.name}, `)}</span>
+						{
+							//Check if Genres Exists
+							MovieInfo.genres.length > 0 ? (
+								<span>Genres: {MovieInfo.genres.map((e) => `${e.name}, `)}</span>
+							) : (
+								<span>{'Genres: Not Available'}</span>
+							)
+						}
 					</div>
 				) : (
 					<div>
-						<span>Directed By: {MovieInfo.created_by.map((e) => `${e.name}, `)}</span>
+						{
+							//Check if Created By Exists
+							MovieInfo.created_by.length > 0 ? (
+								<span>
+									Directed By: {MovieInfo.created_by.map((e) => `${e.name}, `)}
+								</span>
+							) : (
+								<span>{'Directed By: Not Available'}</span>
+							)
+						}
+
 						<span>First Air Date: {MovieInfo.first_air_date}</span>
 						<span>Seasons: {MovieInfo.number_of_seasons}</span>
 						<span>
 							Rating:
 							<small className="rating--media">{MovieInfo.vote_average}/10</small>
 						</span>
-						<span>Genres: {MovieInfo.genres.map((e) => `${e.name}, `)}</span>
+						{
+							//Check if Genres Exists
+							MovieInfo.genres.length > 0 ? (
+								<span>Genres: {MovieInfo.genres.map((e) => `${e.name}, `)}</span>
+							) : (
+								<span>{'Genres: Not Available'}</span>
+							)
+						}
 					</div>
 				)}
 				<p>{MovieInfo.overview}</p>
