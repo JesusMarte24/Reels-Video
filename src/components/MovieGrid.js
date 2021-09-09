@@ -22,7 +22,7 @@ export const MovieGrid = ({ title, movies, pagination = false, pageNumber }) => 
 						key={e.id}
 					>
 						<img
-							src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[2]}${e.poster_path}`}
+							src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[4]}${e.poster_path}`}
 							alt={`About: ${
 								e.title || e.original_title || e.name || e.original_name
 							}`}

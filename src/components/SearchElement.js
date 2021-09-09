@@ -12,7 +12,7 @@ export const SearchElement = ({ id, title, img, rate, media }) => {
 		<div className="search--element">
 			<Link to={`/${media}/${id}`}>
 				<img
-					src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[0]}${img}`}
+					src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[4]}${img}`}
 					alt={`About: ${title}`}
 				/>
 				<div>

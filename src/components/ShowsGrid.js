@@ -27,7 +27,7 @@ export const ShowsGrid = ({ title, data }) => {
 						)
 					)}
 				</ol>
-				<div className="carousel-inner">
+				<div id="carousel--show--container" className="carousel-inner">
 					{data.map((e, i) =>
 						i === 0 ? (
 							<div key={e.id} className="carousel-item active">
@@ -35,7 +35,7 @@ export const ShowsGrid = ({ title, data }) => {
 									<div className="show__info--left">
 										<Link to={`/show/${e.id}`}>
 											<img
-												src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[2]}${e.poster_path}`}
+												src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[4]}${e.poster_path}`}
 												alt={`About: ${
 													e.title ||
 													e.original_title ||
@@ -67,7 +67,7 @@ export const ShowsGrid = ({ title, data }) => {
 									<div className="show__info--left">
 										<Link to={`/show/${e.id}`}>
 											<img
-												src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[2]}${e.poster_path}`}
+												src={`${config.api.imgURL}/${config.api.imgagesSizes.poster_sizes[4]}${e.poster_path}`}
 												alt={`About: ${
 													e.title ||
 													e.original_title ||
