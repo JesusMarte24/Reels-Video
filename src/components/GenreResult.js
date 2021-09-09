@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Header } from './Header';
+import { Navbar } from './Navbar';
 import { config } from '../config';
 import { Loader } from './Loader';
 import { MovieGrid } from './MovieGrid';
@@ -34,17 +36,21 @@ export const GenreResult = () => {
 	}
 
 	return (
-		<div className="mt-10 pb-10">
-			<MovieGrid
-				title={`${media.charAt(0).toUpperCase() + media.slice(1)} ${
-					genre === 'top_rated'
-						? 'Top Rated'
-						: genre.charAt(0).toUpperCase() + genre.slice(1)
-				}`}
-				movies={Genre}
-				pagination={true}
-				pageNumber={page}
-			/>
-		</div>
+		<>
+			<Header />
+			<div className="mt-10 pb-10">
+				<MovieGrid
+					title={`${media.charAt(0).toUpperCase() + media.slice(1)} ${
+						genre === 'top_rated'
+							? 'Top Rated'
+							: genre.charAt(0).toUpperCase() + genre.slice(1)
+					}`}
+					movies={Genre}
+					pagination={true}
+					pageNumber={page}
+				/>
+			</div>
+			<Navbar />
+		</>
 	);
 };
