@@ -8,6 +8,7 @@ import { Login } from './components/Login';
 import { Profile } from './components/Profile';
 import { Signup } from './components/Signup';
 import { SearchResult } from './components/SearchResult';
+import { GenreResult } from './components/GenreResult';
 
 function Reels() {
 	return (
@@ -29,8 +30,11 @@ function Reels() {
 					<Route path="/show/:id">
 						<MovieInfo mediaType={'show'} />
 					</Route>
-					<Route path="/genres">
+					<Route exact path="/genres">
 						<Genres />
+					</Route>
+					<Route path="/genres/:media/:genre/:page">
+						<GenreResult />
 					</Route>
 					<Route exact path="/profile">
 						<Login />
